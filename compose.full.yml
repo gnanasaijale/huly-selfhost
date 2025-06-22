@@ -15,7 +15,7 @@ services:
       - elastic:/usr/share/elasticsearch/data
 
   minio:
-    image: minio/minio:RELEASE.2025-03-01T00-23-45Z
+    image: minio/minio:latest
     command: server /data
     volumes:
       - files:/data
